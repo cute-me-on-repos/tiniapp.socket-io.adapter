@@ -1,4 +1,4 @@
-const debug = require("debug")("tini-ws:sender")
+const debug = console.log
 
 /**
  * Sender

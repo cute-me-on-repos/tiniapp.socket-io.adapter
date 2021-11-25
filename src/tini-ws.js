@@ -3,7 +3,7 @@ const { URL } = require("url")
 const { addEventListener, removeEventListener } = require("./event-target")
 const Sender = require("./sender")
 
-const debug = require("debug")("tini-ws:tini-ws")
+const debug = console.log
 
 const BINARY_TYPES = ["nodebuffer", "arraybuffer"]
 const readyStates = ["CONNECTING", "OPEN", "CLOSING", "CLOSED"]

@@ -23,7 +23,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "socket.io-client": "^4.0.0"
+    "socket.io-client": "^2.4.0"
   },
   "scripts": {
     "prepublish": "rm -rf ./lib ./dist && yarn build",
@@ -34,6 +34,5 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:cute-me-on-repos/tiniapp.socket-io.adapter.git"
-  },
-  "license": ""
+  }
 }
