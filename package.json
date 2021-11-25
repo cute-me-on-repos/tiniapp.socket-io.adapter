@@ -1,0 +1,39 @@
+{
+  "name": "tiniapp.socket-io.adapter",
+  "version": "0.0.1",
+  "keywords": [
+    "realtime",
+    "tini",
+    "tiniapp",
+    "framework",
+    "websocket",
+    "tcp",
+    "events",
+    "client"
+  ],
+  "main": "./lib/tiniapp.socket-io.adapter.js",
+  "files": [
+    "lib/"
+  ],
+  "devDependencies": {
+    "format-util": "^1.0.5",
+    "release-it": "^14.11.5",
+    "string-replace-loader": "^2.2.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.0.0"
+  },
+  "scripts": {
+    "prepublish": "rm -rf ./lib ./dist && yarn build",
+    "build-dev": "webpack --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.js",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cute-me-on-repos/tiniapp.socket-io.adapter.git"
+  },
+  "license": ""
+}
