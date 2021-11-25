@@ -1,1 +1,4 @@
-module.exports = require('socket.io-client')
+const io = require("socket.io-client")
+module.exports = io
+
+export default io

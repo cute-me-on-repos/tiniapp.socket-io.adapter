@@ -7,8 +7,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "lib"),
     filename: "tiniapp.socket-io.adapter.js",
-    libraryTarget: "umd",
+    libraryTarget: "commonjs",
   },
+  devtool: "source-map",
   plugins: [
     new webpack.NormalModuleReplacementPlugin(
       /debug/,
